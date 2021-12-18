@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body style="background-image: url('login_pic.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover">
+
+<div id="login" style="margin-top: 10%">
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" action="sign-up.php" method="post">
+                        <h3 style="color: darkgreen;text-align: center">Sign Up</h3>
+                        <div class="form-group">
+                            <label  style="color: darkgreen">User ID:</label><br>
+                            <input type="text" name="Login_ID"  class="form-control" placeholder="hammad456" id="user">
+                            <label  style="color: darkgreen">Email:</label><br>
+                            <input type="email" name="email"  class="form-control" placeholder="a@gmail.com" id="email" >
+                            <label  style="color: darkgreen">Password:</label><br>
+                            <input type="password" name="Password"  class="form-control" id="password" >
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-success" value="Create Account" onclick="checkEmpty()">
+                            <a href="admin.html"><input type="button" class="btn badge-secondary" style="float: right" value="Back"></a>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function checkEmpty(){
+        let x=document.getElementById("user").value;
+        let y =document.getElementById("password").value;
+        let z =document.getElementById("email").value;
+        if(x=='' || y=='' || z==''){
+            alert("User Id/Password must not be empty");
+        }
+       location.reload();
+    }
+</script>
+
+</body>
+</html>
