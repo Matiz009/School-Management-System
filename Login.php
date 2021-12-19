@@ -25,8 +25,12 @@
 
                         <div class="form-group">
                             <input type="submit" name="submit" class="btn badge-dark" value="Login" onclick="checkEmpty()">
-                            <a href="admin.html"><input type="button" class="btn badge-dark" style="float: right" value="Back"></a>
-                            <a href="admin.html"><input type="button" class="btn btn-success" value="Forgot Password" style="margin-left: 25%"></a>
+                            <a href="admin.html"><input type="button" class="btn badge-dark" style="float: right" value="Back"></a><br>
+                            <br>
+                            <a href="recover_Password.html"><input type="button" class="btn btn-secondary" style="float: right" value="Forgot Password"></a>
+                            <a href="sign-up.html"><input type="button" class="btn btn-secondary" style="float: left" value="Create Account"></a>
+
+
 
                         </div>
 
@@ -75,7 +79,7 @@ if(isset($_POST['Login_ID'])){
     }
     else {
         echo "<br>";
-        die("Query Failed: Wrong Username or Password". mysqli_error($connection));
+        die("Wrong Username or Password". mysqli_error($connection));
     }
 }
 ?>
