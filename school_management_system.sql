@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2021 at 07:54 PM
+-- Generation Time: Dec 19, 2021 at 08:02 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -30,8 +30,15 @@ SET time_zone = "+00:00";
 CREATE TABLE `admission_office` (
   `Login_ID` varchar(30) NOT NULL,
   `Password` varchar(30) NOT NULL,
-  `Phone_Number` int(15) NOT NULL
+  `email` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admission_office`
+--
+
+INSERT INTO `admission_office` (`Login_ID`, `Password`, `email`) VALUES
+('Ahmad111', 'Mati123', 'ahmad12@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -102,7 +109,7 @@ CREATE TABLE `teacher` (
 -- Indexes for table `admission_office`
 --
 ALTER TABLE `admission_office`
-  ADD PRIMARY KEY (`Login_ID`);
+  ADD PRIMARY KEY (`email`,`Login_ID`);
 
 --
 -- Indexes for table `parents`
