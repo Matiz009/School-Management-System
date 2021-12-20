@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Recover Password</title>
+    <title>Recover User</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -14,21 +14,21 @@
         <div id="login-row" class="row justify-content-center align-items-center">
             <div id="login-column" class="col-md-6">
                 <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" action="recoverPassword.php" method="post">
-                        <h1 style="color: darkred;text-align: center">Recover Password</h1>
+                    <form id="login-form" class="form" action="recoverUser.php" method="post">
+                        <h1 style="color: darkred;text-align: center">Recover User ID</h1>
                         <div class="form-group">
+                            <label  style="color: darkred"><h5>Email:</h5></label><br>
+                            <input type="email" name="email"  class="form-control" placeholder="hammad456@gmail.com" id="user">
                             <label  style="color: darkred"><h5>User ID:</h5></label><br>
-                            <input type="text" name="Login_ID"  class="form-control" placeholder="hammad456" id="user">
-                            <label  style="color: darkred"><h5>Password:</h5></label><br>
-                            <input type="password" name="Password"  class="form-control" id="password" >
-                            <label  style="color: darkred"><h5>Confirm Password:</h5></label><br>
-                            <input type="password" name="confirmPassword"  class="form-control" id="confirmPass" >
+                            <input type="text" name="User"  class="form-control" id="password" >
+                            <label  style="color: darkred"><h5>Confirm User ID:</h5></label><br>
+                            <input type="text" name="confirmUser"  class="form-control" id="confirmPass" >
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" name="submit" class="btn btn-danger" value="Reset Password" onclick="checkEmpty()">
-                            <a href="Login.php"><input type="button" class="btn badge-secondary" style="float: right" value="Back"></a><br><br>
-                            <a href="recover_user.html"><input type="button" class="btn btn-danger" style="float: left" value="Recover User ID"></a>
+                            <input type="submit" name="submit" class="btn btn-danger" value="Reset User Id" onclick="checkEmpty()">
+                            <a href="recover_Password.html"><input type="button" class="btn badge-secondary" style="float: right" value="Back"></a>
+
 
                         </div>
 
