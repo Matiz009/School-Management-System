@@ -74,7 +74,7 @@ if(isset($_POST['Login_ID'])){
     if(mysqli_num_rows($result)==1){
 
 
-        header("Location: sign-up.html");
+        header("Location: Admin.html");
         exit();
     }
     else {
