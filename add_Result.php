@@ -10,9 +10,6 @@ $type=$_POST['type'];
 $status=$_POST['status'];
 
 
-
-
-
 while ($record=mysqli_fetch_assoc($result)){
     if($record=$reg){
         $query2="insert into result(Result_Status,Result_Type,Registration_Number) VALUES ('$status','$type','$reg')";

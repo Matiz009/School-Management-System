@@ -13,13 +13,15 @@ $password=$_POST['Password'];
          if($update){
              echo "Account has been Created";
              ?>
+             <br>
+             <a href="sign-up.html">Click here to Back</a>
              <?php
 
          }else{
              echo "Failed to create account";
              ?>
              <br>
-             <a href="updateAttendance.html">Click here to try again.</a>
+             <a href="sign-up.html">Click here to try again.</a>
              <?php
 
          }

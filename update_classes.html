@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Update Class</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
+
 <body style="background-color: gray">
+    <div id="login">
+        <h3 class="text-center text-white pt-5" style="color: cornflowerblue"></h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="update_classes.php" method="post">
+                            <h3 style="color: darkred; text-align: center">Update Class</h3>
 
-<div id="login">
-    <h3 class="text-center text-white pt-5" style="color: cornflowerblue"></h3>
-    <div class="container">
-        <div id="login-row" class="row justify-content-center align-items-center">
-            <div id="login-column" class="col-md-6">
-                <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" action="update_classes.php" method="post">
-                        <h3 style="color: darkred;text-align: center">Update Class</h3>
-
-                        <div class="form-group">
-                            <label  style="color: darkred;font-size: 20px">Class Name:</label><br>
-                            <select class="form-control" name="class_name" id="class-name">
-                                <option>Choose</option>
-                                <option name="class_name">Nursery</option>
-                                <option name="class_name">Prep</option>
-                                <option name="class_name">One</option>
-                                <option name="class_name">Two</option>
-                                <option name="class_name">Three</option>
-                                <option name="class_name">Fourth</option>
-                                <option name="class_name">Fifth</option>
-                                <option name="class_name">Sixth</option>
-                                <option name="class_name">Seventh</option>
-                                <option name="class_name">Eighth</option>
-                                <option name="class_name">Ninth</option>
-                                <option name="class_name">Tenth</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label  style="color: darkred;font-size: 20px">Class Section:</label><br>
-                            <select class="form-control" name="section" id="class-section">
-                                <option>Choose</option>
-                                <option name="section">A</option>
-                                <option name="section">B</option>
-                                <option name="section">C</option>
-                            </select>
-                            <label  style="color: darkred;font-size: 20px">Class Strength</label><br>
-                            <input type="number" name="strength"  class="form-control" id="strength" >
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" class="btn btn-danger" value="Update" onclick="checkEmpty()">
-                            <a href="insert_class.html"><input type="button" class="btn badge-secondary" style="float: right" value="Back"></a>
-                        </div>
-
-
-                    </form>
+                            <div class="form-group">
+                                <label style="color: darkred; font-size: 20px">Class Name:</label
+                  ><br />
+                  <select
+                    class="form-control"
+                    name="class_name"
+                    id="class-name"
+                  >
+                    <option>Choose</option>
+                    <option name="class_name">Nursery</option>
+                    <option name="class_name">Prep</option>
+                    <option name="class_name">One</option>
+                    <option name="class_name">Two</option>
+                    <option name="class_name">Three</option>
+                    <option name="class_name">Fourth</option>
+                    <option name="class_name">Fifth</option>
+                    <option name="class_name">Sixth</option>
+                    <option name="class_name">Seventh</option>
+                    <option name="class_name">Eighth</option>
+                    <option name="class_name">Ninth</option>
+                    <option name="class_name">Tenth</option>
+                  </select>
                 </div>
+                <div class="form-group">
+                  <label style="color: darkred; font-size: 20px"
+                    >Class Section:</label
+                  ><br />
+                  <select
+                    class="form-control"
+                    name="section"
+                    id="class-section"
+                  >
+                    <option>Choose</option>
+                    <option name="section">A</option>
+                    <option name="section">B</option>
+                    <option name="section">C</option>
+                  </select>
+                  <label style="color: darkred; font-size: 20px"
+                    >Class Strength</label
+                  ><br />
+                  <input
+                    type="number"
+                    name="strength"
+                    class="form-control"
+                    id="strength"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="btn btn-danger"
+                    value="Update"
+                    onclick="checkEmpty()"
+                  />
+                  <a href="insert_class.html"
+                    ><input
+                      type="button"
+                      class="btn badge-secondary"
+                      style="float: right"
+                      value="Back"
+                  /></a>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<script type="text/javascript">
-    function checkEmpty(){
-        let x=document.getElementById("strength").value;
-        let y =document.getElementById("class-name").value;
-        let z =document.getElementById("class-section").value;
-        if(x=='' || y=='' || z==''){
-            alert("Fields must not be empty");
+    <script type="text/javascript">
+      function checkEmpty() {
+        let x = document.getElementById("strength").value;
+        let y = document.getElementById("class-name").value;
+        let z = document.getElementById("class-section").value;
+        if (x == "" || y == "" || z == "") {
+          alert("Fields must not be empty");
         }
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>

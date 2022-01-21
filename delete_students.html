@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Delete Students</title>
     <style>
-        * {box-sizing: border-box}
-
+        * {
+            box-sizing: border-box;
+        }
+        
         .container {
             padding: 16px;
         }
-
-        input[type=text], input[type=number] {
+        
+        input[type="text"],
+        input[type="number"] {
             width: 100%;
             padding: 15px;
             margin: 5px 0 22px 0;
@@ -18,19 +22,20 @@
             border: none;
             background: #f1f1f1;
         }
-
-        input[type=text]:focus, input[type=number] :focus {
+        
+        input[type="text"]:focus,
+        input[type="number"] :focus {
             background-color: #ddd;
             outline: none;
         }
-
+        
         hr {
             border: 1px solid darkred;
             margin-bottom: 25px;
         }
-
+        
         .sbtn {
-            background-color:red;
+            background-color: red;
             color: white;
             padding: 16px 20px;
             margin: 8px 0;
@@ -39,37 +44,36 @@
             width: 100%;
             opacity: 0.9;
         }
-
+        
         .sbtn:hover {
-            opacity:1;
+            opacity: 1;
         }
+        
         a {
             color: dodgerblue;
         }
-
     </style>
 
     <script type="text/javascript">
         function checkEmpty() {
             let x = document.getElementById("reg").value;
-            if (x == '') {
+            if (x == "") {
                 alert("Registration number must not be empty.");
             }
         }
     </script>
 </head>
+
 <body style="background-color: gray">
-    <h1 style="text-align: center;color: white">Delete Student Record</h1>
-<form action="delete_students.php" method="post">
-    <div class="container">
-
-        <b style="color: white">Enter Registration Number:</b> <input type="text" name="Registration_Number" id="reg" >
-        <input type="submit" class="sbtn" onclick="checkEmpty()" value="Delete Record">
-
-
-
-    </div>
-</form>
-    <a href="Admin.html"><button class="sbtn" > Back</button></a>
+    <h1 style="text-align: center; color: white">Delete Student Record</h1>
+    <form action="delete_students.php" method="post">
+        <div class="container">
+            <b style="color: white">Enter Registration Number:</b>
+            <input type="text" name="Registration_Number" id="reg" />
+            <input type="submit" class="sbtn" onclick="checkEmpty()" value="Delete Record" />
+        </div>
+    </form>
+    <a href="Admin.html"><button class="sbtn">Back</button></a>
 </body>
+
 </html>

@@ -69,7 +69,7 @@ if(isset($_POST['Login_ID'])){
     if(mysqli_num_rows($result)==1){
 
 
-        header("Location: Admin.html");
+        header("Location: searchResults.html");
         exit();
     }
     else {

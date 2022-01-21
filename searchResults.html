@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>sign up</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
-<body style="background-image: url('Brookfield+LOGO+clear+copyico.png');background-repeat: no-repeat;background-attachment: fixed;background-size: 400px;margin-left: 20px;margin-top: 100px">
 
-<h4 style="text-align: center">Welcome to Brookfield Parent Console</h4>
+<body style="
+      background-image: url('Brookfield+LOGO+clear+copyico.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 400px;
+      margin-left: 20px;
+      margin-top: 100px;
+    ">
+    <h4 style="text-align: center">Welcome to Brookfield Parent Console</h4>
 
-<br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br />
 
-<form method="post" action="SearchResults.php">
-    Enter Student's Registration Number:
-    <input type="text" name="Reg" id="id">
-    <input type="submit" value="Search" class="btn btn-success" onclick="alert()">
-    <a href="Main.html"><input type="button" value="Logout" style="float: right" class="btn btn-danger"></a>
-</form>
+    <form method="post" action="SearchResults.php">
+        Enter Student's Registration Number:
+        <input type="text" name="Reg" id="id" />
+        <input type="submit" value="Search" class="btn btn-success" onclick="alert()" />
+        <a href="Main.html"><input type="button" value="Logout" style="float: right" class="btn btn-danger" /></a>
+    </form>
 
-<script type="text/javascript">
-    function alert() {
-        let a = document.getElementById('id').value;
-        if (a == '') {
-            alert("Registration Number can not be empty.")
+    <script type="text/javascript">
+        function alert() {
+            let a = document.getElementById("id").value;
+            if (a == "") {
+                alert("Registration Number can not be empty.");
+            }
         }
-    }
-</script>
-
-
+    </script>
 </body>
+
+</html>

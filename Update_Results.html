@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Result</title>
+    <meta charset="UTF-8" />
+    <title>Result</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
+
 <body class="badge-dark">
-
-<div id="login"><br><br><br>
-  <h3 class="text-center text-white pt-5" style="color: cornflowerblue">Students Result Portal</h3>
-  <div class="container">
-    <div id="login-row" class="row justify-content-center align-items-center">
-      <div id="login-column" class="col-md-6">
-        <div id="login-box" class="col-md-12">
-          <form id="login-form" class="form" action="update_results.php" method="post">
-            <div class="form-group">
-              <label  style="color: ghostwhite;">Registration Number:</label><br>
-              <input type="text" name="Reg"  class="form-control" placeholder="John" id="reg">
+    <div id="login">
+        <br /><br /><br />
+        <h3 class="text-center text-white pt-5" style="color: cornflowerblue">
+            Students Result Portal
+        </h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="update_results.php" method="post">
+                            <div class="form-group">
+                                <label style="color: ghostwhite">Registration Number:</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="Reg"
+                    class="form-control"
+                    placeholder="John"
+                    id="reg"
+                  />
+                </div>
+                <div class="form-group">
+                  <label style="color: ghostwhite">Result Type:</label><br />
+                                <select class="form-control" name="type" id="type">
+                    <option name="type">Mid Term</option>
+                    <option name="type">Final</option>
+                  </select>
+                            </div>
+                            <div class="form-group">
+                                <label style="color: ghostwhite">Result Status:</label
+                  ><br id="status" />
+                  <select class="form-control" name="status">
+                    <option name="status">Pass</option>
+                    <option name="status">Fail</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="btn btn-success"
+                    value="Update"
+                  />
+                  <a href="Result.html"
+                    ><input
+                      type="button"
+                      class="btn btn-success"
+                      style="float: right"
+                      value="Back"
+                  /></a>
+                </div>
+              </form>
             </div>
-            <div class="form-group">
-              <label  style="color: ghostwhite">Result Type:</label><br>
-              <select class="form-control" name="type" id="type">
-                <option name="type">Mid Term</option>
-                <option name="type">Final</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label  style="color: ghostwhite">Result Status:</label><br id="status">
-              <select class="form-control" name="status">
-                <option name="status">Pass</option>
-                <option name="status">Fail</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <input type="submit" name="submit" class="btn btn-success" value="Update">
-              <a href="Result.html"><input type="button" class="btn btn-success" style="float: right" value="Back"></a>
-            </div>
-
-
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
